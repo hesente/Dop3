@@ -1,0 +1,22 @@
+// Класс Мужчина
+class Man extends Human {
+    private String occupation;
+
+    public Man(String name, String occupation) {
+        super(name);
+        this.occupation = occupation;
+    }
+
+    public String getOccupation() {
+        return occupation;
+    }
+
+    public void setOccupation(String occupation) {
+        this.occupation = occupation;
+    }
+
+    @Override
+    public void displayInfo() {
+        System.out.println("Мужчина: " + getName() + ", Профессия: " + occupation);
+    }
+}
